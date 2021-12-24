@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-
+import { useNavigate } from 'react-router-dom';
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import {
@@ -43,9 +43,13 @@ const FirebaseLogin = ({ ...others }) => {
     const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
     const customization = useSelector((state) => state.customization);
     const [checked, setChecked] = useState(true);
-
+    const navigate = useNavigate();
     const googleHandler = async () => {
         console.error('Login');
+    };
+    const handleToggle = () => {
+        navigate('/dashboard', { replace: true });
+        console.log('Login');
     };
 
     const [showPassword, setShowPassword] = useState(false);
@@ -120,8 +124,8 @@ const FirebaseLogin = ({ ...others }) => {
 
             <Formik
                 initialValues={{
-                    email: 'info@codedthemes.com',
-                    password: '123456',
+                    email: '',
+                    password: '',
                     submit: null
                 }}
                 validationSchema={Yup.object().shape({
@@ -229,7 +233,7 @@ const FirebaseLogin = ({ ...others }) => {
                                     disabled={isSubmitting}
                                     fullWidth
                                     size="large"
-                                    type="submit"
+                                    onClick={handleToggle}
                                     variant="contained"
                                     color="secondary"
                                 >
