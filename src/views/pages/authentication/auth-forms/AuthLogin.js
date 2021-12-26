@@ -211,7 +211,7 @@ const FirebaseLogin = ({ ...others }) => {
                                         checked={checked}
                                         onChange={(event) => setChecked(event.target.checked)}
                                         name="checked"
-                                        color="primary"
+                                        color="custom"
                                     />
                                 }
                                 label="Remember me"
@@ -235,7 +235,8 @@ const FirebaseLogin = ({ ...others }) => {
                                     size="large"
                                     onClick={handleToggle}
                                     variant="contained"
-                                    color="primary"
+                                    color="custom"
+                                    id="white-color"
                                 >
                                     Sign in
                                 </Button>

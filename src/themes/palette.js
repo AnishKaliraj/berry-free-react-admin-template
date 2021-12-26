@@ -18,6 +18,7 @@ export default function themePalette(theme) {
         },
         custom: {
             light: theme.colors?.customLight,
+            main: theme.colors?.customMain,
             dark: theme.colors?.successDark,
             200: theme.colors?.primary200,
             800: theme.colors?.primary800
