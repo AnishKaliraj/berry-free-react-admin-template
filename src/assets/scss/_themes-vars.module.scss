@@ -8,6 +8,10 @@ $primaryDark: #1e88e5;
 $primary200: #90caf9;
 $primary800: #1565c0;
 
+// custom
+$customLight: #ebfde3;
+$customDark: #129443;
+
 // secondary
 $secondaryLight: #ede7f6;
 $secondaryMain: #673ab7;
@@ -83,6 +87,8 @@ $darkTextSecondary: #8492c4;
 
     // primary
     primaryLight: $primaryLight;
+    customLight: $customLight;
+    customDark: $customDark;
     primary200: $primary200;
     primaryMain: $primaryMain;
     primaryDark: $primaryDark;

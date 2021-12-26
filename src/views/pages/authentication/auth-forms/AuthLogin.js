@@ -216,7 +216,7 @@ const FirebaseLogin = ({ ...others }) => {
                                 }
                                 label="Remember me"
                             />
-                            <Typography variant="subtitle1" color="secondary" sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+                            <Typography variant="subtitle1" color="#129443" sx={{ textDecoration: 'none', cursor: 'pointer' }}>
                                 Forgot Password?
                             </Typography>
                         </Stack>
@@ -235,7 +235,7 @@ const FirebaseLogin = ({ ...others }) => {
                                     size="large"
                                     onClick={handleToggle}
                                     variant="contained"
-                                    color="secondary"
+                                    color="primary"
                                 >
                                     Sign in
                                 </Button>
