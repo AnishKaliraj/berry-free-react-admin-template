@@ -12,7 +12,15 @@ import PopupState, { bindPopper, bindToggle } from 'material-ui-popup-state';
 import Transitions from 'ui-component/extended/Transitions';
 
 // assets
-import { IconAdjustmentsHorizontal, IconSearch, IconX } from '@tabler/icons';
+import {
+    IconAdjustmentsHorizontal,
+    IconSearch,
+    IconX,
+    IconShoppingCartDiscount,
+    IconShoppingCartPlus,
+    IconCoin,
+    IconGift
+} from '@tabler/icons';
 import { shouldForwardProp } from '@mui/system';
 
 // styles
@@ -27,7 +35,7 @@ const PopperStyle = styled(Popper, { shouldForwardProp })(({ theme }) => ({
 }));
 
 const OutlineInputStyle = styled(OutlinedInput, { shouldForwardProp })(({ theme }) => ({
-    width: 434,
+    width: 184,
     marginLeft: 16,
     paddingLeft: 16,
     paddingRight: 16,
@@ -48,11 +56,11 @@ const OutlineInputStyle = styled(OutlinedInput, { shouldForwardProp })(({ theme 
 const HeaderAvatarStyle = styled(Avatar, { shouldForwardProp })(({ theme }) => ({
     ...theme.typography.commonAvatar,
     ...theme.typography.mediumAvatar,
-    background: theme.palette.secondary.light,
-    color: theme.palette.secondary.dark,
+    background: theme.palette.custom.dark,
+    color: theme.palette.custom.light,
     '&:hover': {
-        background: theme.palette.secondary.dark,
-        color: theme.palette.secondary.light
+        background: theme.palette.custom.light,
+        color: theme.palette.custom.dark
     }
 }));
 
@@ -185,6 +193,43 @@ const SearchSection = () => {
                     inputProps={{ 'aria-label': 'weight' }}
                 />
             </Box>
+            <div className="_pl-10">
+                <button type="button" className="action-buttons">
+                    {/* <img src={logo.jpeg} alt=" Buy StaksCoin" /> */}
+                    <span className="button-icons">
+                        <IconShoppingCartDiscount stroke={1.5} size="1.3rem" />
+                    </span>
+                    <span className="button-text">Buy StaksCoin</span>
+                </button>
+            </div>
+            <div className="_pl-10">
+                <button type="button" className="action-buttons">
+                    {/* <img src={logo.jpeg} alt=" Buy StaksCoin" /> */}
+                    <span className="button-icons">
+                        <IconShoppingCartPlus stroke={1.5} size="1.3rem" />
+                    </span>
+                    <span className="button-text">Sell StaksCoin</span>
+                </button>
+            </div>
+            <div className="_pl-10">
+                <button type="button" className="action-buttons">
+                    {/* <img src={logo.jpeg} alt=" Buy StaksCoin" /> */}
+                    <span className="button-text _pt-5 _pl-10">StaksCoin Rewards</span>
+                    <span className="button-icons amount-box">
+                        <IconCoin stroke={1.5} size="1.3rem" />
+                        <span className="button-text _pl-10">400</span>
+                    </span>
+                </button>
+            </div>
+            <div className="_pl-10">
+                <button type="button" className="action-buttons">
+                    {/* <img src={logo.jpeg} alt=" Buy StaksCoin" /> */}
+                    <span className="button-icons">
+                        <IconGift stroke={1.5} size="1.3rem" />
+                    </span>
+                    <span className="button-text">Redeem StaksCoin for Gift Cards</span>
+                </button>
+            </div>
         </>
     );
 };

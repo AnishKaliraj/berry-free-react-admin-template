@@ -55,6 +55,38 @@
 #white-color{
     color: #ffffff;
 }
+._pl-10{
+    padding-left: 10px;
+}
+._pt-5{
+    padding-top: 5px !important;
+}
+.action-buttons{
+    background: #fff;
+    border: 1px #e5e5e5 solid;
+    border-radius: 5px;
+    height: 45px;
+    padding-top: 5px;
+}
+.button-icons{
+    float: left;
+    color: #129443;
+    padding-right: 5px;
+}
+.button-text{
+    float: right;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+.amount-box{
+    border: 1px white solid;
+    background: #129443;
+    color: white;
+    padding-top: 2px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 // ==============================|| ANIMATION KEYFRAMES ||============================== //
 

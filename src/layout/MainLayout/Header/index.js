@@ -40,11 +40,11 @@ const Header = ({ handleLeftDrawerToggle }) => {
                             ...theme.typography.commonAvatar,
                             ...theme.typography.mediumAvatar,
                             transition: 'all .2s ease-in-out',
-                            background: theme.palette.secondary.light,
-                            color: theme.palette.secondary.dark,
+                            background: theme.palette.custom.dark,
+                            color: theme.palette.custom.light,
                             '&:hover': {
-                                background: theme.palette.secondary.dark,
-                                color: theme.palette.secondary.light
+                                background: theme.palette.custom.light,
+                                color: theme.palette.custom.dark
                             }
                         }}
                         onClick={handleLeftDrawerToggle}
@@ -57,8 +57,6 @@ const Header = ({ handleLeftDrawerToggle }) => {
 
             {/* header search */}
             <SearchSection />
-            <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ flexGrow: 1 }} />
 
             {/* notification & profile */}
             <NotificationSection />

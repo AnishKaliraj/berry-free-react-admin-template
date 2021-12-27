@@ -30,7 +30,7 @@ import Transitions from 'ui-component/extended/Transitions';
 import NotificationList from './NotificationList';
 
 // assets
-import { IconBell } from '@tabler/icons';
+import { IconStar } from '@tabler/icons';
 
 // notification status options
 const status = [
@@ -66,7 +66,8 @@ const NotificationSection = () => {
     const anchorRef = useRef(null);
 
     const handleToggle = () => {
-        setOpen((prevOpen) => !prevOpen);
+        console.log('In Progress');
+        // setOpen((prevOpen) => !prevOpen);
     };
 
     const handleClose = (event) => {
@@ -106,11 +107,11 @@ const NotificationSection = () => {
                             ...theme.typography.commonAvatar,
                             ...theme.typography.mediumAvatar,
                             transition: 'all .2s ease-in-out',
-                            background: theme.palette.secondary.light,
-                            color: theme.palette.secondary.dark,
+                            background: theme.palette.custom.dark,
+                            color: theme.palette.custom.light,
                             '&[aria-controls="menu-list-grow"],&:hover': {
-                                background: theme.palette.secondary.dark,
-                                color: theme.palette.secondary.light
+                                background: theme.palette.custom.light,
+                                color: theme.palette.custom.dark
                             }
                         }}
                         ref={anchorRef}
@@ -119,7 +120,7 @@ const NotificationSection = () => {
                         onClick={handleToggle}
                         color="inherit"
                     >
-                        <IconBell stroke={1.5} size="1.3rem" />
+                        <IconStar stroke={1.5} size="1.3rem" />
                     </Avatar>
                 </ButtonBase>
             </Box>

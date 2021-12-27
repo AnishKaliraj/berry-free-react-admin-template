@@ -13,12 +13,12 @@ const icons = {
 
 const utilities = {
     id: 'utilities',
-    title: 'Utilities',
+    title: '',
     type: 'group',
     children: [
         {
             id: 'util-typography',
-            title: 'Typography',
+            title: 'Administration',
             type: 'item',
             url: '/utils/util-typography',
             icon: icons.IconTypography,
@@ -26,7 +26,7 @@ const utilities = {
         },
         {
             id: 'util-color',
-            title: 'Color',
+            title: 'Exclusive Content',
             type: 'item',
             url: '/utils/util-color',
             icon: icons.IconPalette,
@@ -34,34 +34,58 @@ const utilities = {
         },
         {
             id: 'util-shadow',
-            title: 'Shadow',
+            title: 'Pages',
             type: 'item',
             url: '/utils/util-shadow',
             icon: icons.IconShadow,
             breadcrumbs: false
         },
         {
-            id: 'icons',
-            title: 'Icons',
-            type: 'collapse',
-            icon: icons.IconWindmill,
-            children: [
-                {
-                    id: 'tabler-icons',
-                    title: 'Tabler Icons',
-                    type: 'item',
-                    url: '/icons/tabler-icons',
-                    breadcrumbs: false
-                },
-                {
-                    id: 'material-icons',
-                    title: 'Material Icons',
-                    type: 'item',
-                    url: '/icons/material-icons',
-                    breadcrumbs: false
-                }
-            ]
+            id: 'util-shadow',
+            title: 'Groups',
+            type: 'item',
+            url: '/utils/util-shadow',
+            icon: icons.IconShadow,
+            breadcrumbs: false
+        },
+        {
+            id: 'util-shadow',
+            title: 'Fans',
+            type: 'item',
+            url: '/utils/util-shadow',
+            icon: icons.IconShadow,
+            breadcrumbs: false
+        },
+        {
+            id: 'util-shadow',
+            title: 'Market Place',
+            type: 'item',
+            url: '/utils/util-shadow',
+            icon: icons.IconShadow,
+            breadcrumbs: false
         }
+        // {
+        //     id: 'icons',
+        //     title: 'Icons',
+        //     type: 'collapse',
+        //     icon: icons.IconWindmill,
+        //     children: [
+        //         {
+        //             id: 'tabler-icons',
+        //             title: 'Tabler Icons',
+        //             type: 'item',
+        //             url: '/icons/tabler-icons',
+        //             breadcrumbs: false
+        //         },
+        //         {
+        //             id: 'material-icons',
+        //             title: 'Material Icons',
+        //             type: 'item',
+        //             url: '/icons/material-icons',
+        //             breadcrumbs: false
+        //         }
+        //     ]
+        // }
     ]
 };
 
